@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(40, 40, 43);
+  color: rgb(163, 163, 163);
+}
+
+.header {
+  background-color: rgb(80, 91, 136);
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: rgb(12, 12, 12);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: rgb(39, 39, 39);
+  color: rgb(151, 151, 151);
+}
+
+.header-right {
+  float: right;
+}
+
+.row {
+  display: flex;
+  flex: 1 0 auto;
+  flex-wrap: wrap;
+  padding: 2px 10px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 20px 10px;
+}
+
+.coloumn img {
+  padding-bottom: 20px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content a {
+  text-decoration: none;
+  color: rgb(96, 104, 180);
+}
+
+/* Set all of our images to the full width of whatever element they are inside of*/
+img {
+  width: 100%;
+}
+
+.footer {
+  flex-shrink: 0;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px;
+}
+
+::selection {
+  color: rgb(192, 192, 192);
+  background: black;
+}
+
+/* Media Quarles - Responsive layout */
+
+@media screen and (max-width: 1200px) {
+  flex: 50%;
+  max-width: 50%;
+}
+) 
+
+@media screen and (max-width: 1200px)(
+    /*Make a two column layout */
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+) 
+
+/*Styles for enbeded stop page */
+.shop-page {
+  padding: 2rem 1rem 10rem 1rem;
+}
+
+.shop-page h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.shop-page .text-box {
+  max-width: 80ch;
+  margin: 0 auto;
+}
+.shop-box {
+  width: 266px;
+  margin: 0 auto;
+}
